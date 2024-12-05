@@ -1,0 +1,28 @@
+name = "api-notify"
+main = "src/index.ts"
+compatibility_date = "2024-12-05"
+
+compatibility_flags = [ "nodejs_compat" ]
+
+[vars]
+MY_VAR = "my-variable"
+
+# [[kv_namespaces]]
+# binding = "MY_KV_NAMESPACE"
+# id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+
+# [[r2_buckets]]
+# binding = "MY_BUCKET"
+# bucket_name = "my-bucket"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "notify_db"
+database_id = "67ca0ac9-7e0c-4056-adac-a7ff9fcb475f"
+
+# [ai]
+# binding = "AI"
+
+# [observability]
+# enabled = true
+# head_sampling_rate = 1

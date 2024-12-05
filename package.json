@@ -1,0 +1,23 @@
+{
+  "name": "api-notify",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy --minify",
+    "db:generate": "drizzle-kit generate",
+    "db:up": "drizzle-kit up:sqlite"
+  },
+  "dependencies": {
+    "@libsql/client": "^0.14.0",
+    "dotenv": "^16.4.7",
+    "drizzle-orm": "^0.37.0",
+    "hono": "^4.6.12",
+    "nodemailer": "^6.9.16"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20241112.0",
+    "@types/bun": "^1.1.14",
+    "@types/nodemailer": "^6.4.17",
+    "drizzle-kit": "^0.29.1",
+    "wrangler": "^3.88.0"
+  }
+}
